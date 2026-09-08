@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CV of Behzod Muxiddinov, frontend developer from Karshi, Uzbekistan, working with JavaScript, TypeScript, React and Next.js.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Behzod Muxiddinov — Frontend Developer CV</title>
+    <link rel="icon" href="images/rs-school-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <img class="header__photo" src="images/avatar.jpeg" width="340" height="340" alt="Portrait photo of Behzod Muxiddinov">
+        <div class="header__intro">
+          <h1 class="header__name">Behzod Muxiddinov</h1>
+          <p class="header__role">Frontend Developer</p>
+          <p class="header__place">Tashkent, Uzbekistan</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Section navigation">
+        <div class="container">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+            <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+            <li class="nav__item"><a class="nav__link" href="#code">Code Example</a></li>
+            <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+            <li class="nav__item"><a class="nav__link" href="#education">Education</a></li>
+            <li class="nav__item"><a class="nav__link" href="#english">English</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main container">
+      <section class="section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <p>I am a frontend developer from Karshi, Uzbekistan. I build single-page applications with React, TypeScript and Redux Toolkit, and I care about clean component structure, readable state management and interfaces that stay usable on a phone as well as on a wide monitor.</p>
+        <p>My background is in economics, so I am comfortable reading a business requirement and turning it into a working screen. I moved into development because I wanted to build the tools instead of only using them, and I have been shipping personal and commercial projects ever since.</p>
+        <p>My goal for the next year is to join a product team as a frontend developer, get used to working with code review and a real release process, and deepen my knowledge of testing and application architecture.</p>
+      </section>
+
+      <section class="section" id="contacts">
+        <h2 class="section__title">Contacts</h2>
+        <ul class="contacts">
+          <li class="contacts__item"><span class="contacts__label">Email</span><a href="mailto:behzodmufc@gmail.com">behzodmufc@gmail.com</a></li>
+          <li class="contacts__item"><span class="contacts__label">GitHub</span><a href="https://github.com/behzodmuxiddinov" target="_blank" rel="noopener">github.com/behzodmuxiddinov</a></li>
+          <li class="contacts__item"><span class="contacts__label">Discord</span><span>behzodmuxiddinov</span></li>
+          <li class="contacts__item"><span class="contacts__label">Location</span><span>Tashkent, Uzbekistan</span></li>
+        </ul>
+      </section>
+
+      <section class="section" id="skills">
+        <h2 class="section__title">Skills</h2>
+
+        <h3 class="section__subtitle">Languages and markup</h3>
+        <ul class="skills">
+          <li class="skills__item">HTML5</li>
+          <li class="skills__item">CSS3, Flexbox, Grid, SCSS</li>
+          <li class="skills__item">JavaScript (ES6+)</li>
+          <li class="skills__item">TypeScript</li>
+        </ul>
+
+        <h3 class="section__subtitle">Libraries and frameworks</h3>
+        <ul class="skills">
+          <li class="skills__item">React</li>
+          <li class="skills__item">Next.js</li>
+          <li class="skills__item">Nuxt.js</li>
+          <li class="skills__item">Redux Toolkit, React Redux</li>
+          <li class="skills__item">React Router, React Hook Form</li>
+          <li class="skills__item">Material UI, Tailwind CSS, styled-components</li>
+        </ul>
+
+        <h3 class="section__subtitle">Tools and practices</h3>
+        <ul class="skills">
+          <li class="skills__item">Git, GitHub, pull requests</li>
+          <li class="skills__item">REST API integration with axios and fetch</li>
+          <li class="skills__item">Responsive and cross-browser layout</li>
+          <li class="skills__item">Deployment to Vercel and GitHub Pages</li>
+        </ul>
+      </section>
+
+      <section class="section" id="code">
+        <h2 class="section__title">Code Example</h2>
+        <p>Codewars kata <a href="https://www.codewars.com/kata/5467e4d82edf8bbf40000155" target="_blank" rel="noopener">Descending Order</a> (7 kyu). The function takes a non-negative number and rearranges its digits so that they go from the largest to the smallest.</p>
+<pre class="code"><code>function descendingOrder(n) {
+  return Number(
+    String(n)
+      .split('')
+      .sort((a, b) =&gt; b - a)
+      .join('')
+  );
+}
+
+descendingOrder(0);           // =&gt; 0
+descendingOrder(15);          // =&gt; 51
+descendingOrder(1021);        // =&gt; 2110
+descendingOrder(123456789);   // =&gt; 987654321</code></pre>
+      </section>
+
+      <section class="section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <p>My current work is on internal platforms for Uzbekistan Railways. These systems live on the company's own network and are accessible only to Uzbekistan Railways staff, not to the public, so there are no public repositories or live demos I can link to here.</p>
+        <p>In practice it means building and maintaining internal web interfaces: dashboards and data tables for operational records, forms with validation for staff workflows, role-based views, and integration with in-house REST APIs — written with React, Redux Toolkit, Nuxt.js, Pinia,TypeScript and Tanstack Query.</p>
+      </section>
+
+      <section class="section" id="education">
+        <h2 class="section__title">Education</h2>
+        <ul class="education">
+          <li class="education__item">
+            <h3 class="education__name">Karshi Engineering-Economics Institute</h3>
+            <p class="education__meta">Bachelor's degree in Economics</p>
+            <p>Studied economics, statistics and analysis. This is where I got used to working with data and structured problems before moving into development.</p>
+          </li>
+
+          <li class="education__item">
+            <h3 class="education__name">Open Web Academy, Karshi</h3>
+            <p class="education__meta">Frontend development course</p>
+            <p>Learned programming here: HTML, CSS, JavaScript and React, with practical projects and code review from mentors.</p>
+          </li>
+
+          <li class="education__item">
+            <h3 class="education__name">The Rolling Scopes School</h3>
+            <p class="education__meta">JavaScript / Frontend course, in progress</p>
+            <p>Currently studying at <a href="https://rs.school/courses/short-track" target="_blank" rel="noopener">RS School</a>, strengthening the fundamentals of markup, layout, JavaScript and Git workflow.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="english">
+        <h2 class="section__title">English</h2>
+        <p class="english__level">B1 — Intermediate</p>
+        <p>I read technical documentation, articles in English without translation, and I write commit messages, issues and pull request descriptions in English.</p>
+        <p>I am working on my speaking: I practise regularly and my aim is to reach a confident B2 so that I can take part in stand-ups and code reviews with an international team.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__author"><a class="footer__link" href="https://github.com/behzodmuxiddinov" target="_blank" rel="noopener">github.com/behzodmuxiddinov</a></p>
+        <p class="footer__year">2026</p>
+        <a class="footer__rs" href="https://rs.school/courses/short-track" target="_blank" rel="noopener">
+          <img class="footer__logo" src="images/rs-school-logo.svg" width="40" height="40" alt="The Rolling Scopes School logo">
+          <span>RS School</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
